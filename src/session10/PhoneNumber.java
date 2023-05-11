@@ -2,7 +2,7 @@ package session10;
 
 import java.util.ArrayList;
 
-public class PhoneNumber {
+public final class PhoneNumber {
     private String name;
     private ArrayList<String> phoneList = new ArrayList<>();
 
@@ -21,11 +21,6 @@ public class PhoneNumber {
         }
     }
 
-    public PhoneNumber(String name, ArrayList<String> phoneList) {
-        this.name = name;
-        this.phoneList = phoneList;
-    }
-
     public String getName() {
         return name;
     }
@@ -36,10 +31,6 @@ public class PhoneNumber {
 
     public ArrayList<String> getPhoneList() {
         return phoneList;
-    }
-
-    public void setPhoneList(ArrayList<String> phoneList) {
-        this.phoneList = phoneList;
     }
 
     public  void showInfoPhoneNumber() {

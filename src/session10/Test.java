@@ -69,8 +69,9 @@ public class Test {
                     phoneBook.sort();
                     System.out.println("Phone book after sorted: ");
                     phoneBook.showInfo();
+                    break;
                 case 6:
-                     phoneBook.showInfo();
+                    phoneBook.showInfo();
                     break;
 
                 default:
