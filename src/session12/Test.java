@@ -45,9 +45,11 @@ public class Test {
 
                     }
                     else{
-                        listNews.get(indexOfNews).InputRate();
+                        float rating;
+                        System.out.println("Enter rating this news: ");
+                        rating = input.nextFloat();
+                        listNews.get(indexOfNews).InputRate(rating);
                     }
-
                     break;
                 case 3:
                     showInfoListNews(listNews);

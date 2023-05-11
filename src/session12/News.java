@@ -103,11 +103,7 @@ class News implements INews {
         //this.averageRate = Math.round(total/size);
     }
 
-    public void InputRate() {
-        float rating;
-        var input = new Scanner(System.in);
-        System.out.println("Enter rating this news: ");
-        rating = input.nextFloat();
+    public void InputRate(float rating) {
         if(rating >= 1 && rating <= 5){
             this.rateList.add(rating);
             this.Calculate();
