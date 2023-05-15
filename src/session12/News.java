@@ -2,7 +2,7 @@ package session12;
 
 import java.util.ArrayList;
 import java.util.Objects;
-import java.util.Scanner;
+
 
 class News implements INews {
     private int id;
@@ -90,7 +90,7 @@ class News implements INews {
     public void Display(){
         System.out.println("=====> Information's News <======");
         System.out.printf("%-20d%-20s%-20s%-20s%-20s%-20f\n",
-            this.getId(),   this.getTitle(), this.getPublishDate(), this.getAuthor(), this.getContent(), this.getAverageRate());
+            this.getId(),  this.getTitle(), this.getPublishDate(), this.getAuthor(), this.getContent(), this.getAverageRate());
     }
 
     public void Calculate() {
@@ -109,7 +109,7 @@ class News implements INews {
             this.Calculate();
         }
         else{
-            System.out.println("Please rating in [1, 5]");
+            System.out.println("Please enter rating in [1, 5]");
         }
     }
 }
