@@ -353,8 +353,7 @@ public class Test {
                 emp.getDuty(),
                 emp.getSalary(),
                 emp.getExperience(),
-                emp.getWorkingDay()
-               );
+                emp.getWorkingDay());
     }
 
     private static void showManagers(ArrayList<Employee> managers){
